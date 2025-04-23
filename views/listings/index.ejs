@@ -31,74 +31,88 @@
         border: 1px solid black;
         border-radius: 1rem;
         height: 2.5rem;
-        padding: 1rem;
-        margin-left: 2.5rem;
+        width: 250px;
         display: flex;
         align-items: center;
+        justify-content: center;
+        opacity: 0.7;
+        margin-left: 4rem;
+      }
+
+      .tax-toggle:hover {
+        opacity:1
       }
     </style>
 
-    <div id="filters">
-      <a href="/listings/trending" class="nav-link">
-      <div class="filter">
+  <nav class="navbar navbar-expand-md bg-body-light"> 
+
+   <div id="filters" class="container fluid">
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      
+      <div class="filter navbar-nav">
+        <a href="/listings/trending" class="nav-link">
         <div><i class="fa-solid fa-fire"></i></div>
         <p>Trending</p>
+        </a>
       </div>
-      </a>
-      <a href="/listings/rooms" class="nav-link">
-      <div class="filter">
+      
+      <div class="filter navbar-nav">
+        <a href="/listings/rooms" class="nav-link">
         <div><i class="fa-solid fa-bed"></i></div>
         <p>Rooms</p>
+        </a>
       </div>
-      </a>
-      <a href="/listings/iconic_cities" class="nav-link">
-      <div class="filter">
+      
+      <div class="filter navbar-nav">
+        <a href="/listings/iconic_cities" class="nav-link">
         <div><i class="fa-solid fa-mountain-city"></i></div>
         <p>Iconic Cities</p>
+        </a>
       </div>
-      </a>
-      <a href="/listings/mountains" class="nav-link">
-      <div class="filter">
+      
+      <div class="filter navbar-nav">
+        <a href="/listings/mountains" class="nav-link">
         <div><i class="fa-solid fa-mountain"></i></div>
         <p>Mountains</p>
+        </a>
       </div>
-      </a>
-      <a href="/listings/castles" class="nav-link">
-      <div class="filter">
+    
+      <div class="filter navbar-nav">
+        <a href="/listings/castles" class="nav-link">
         <div><i class="fa-brands fa-fort-awesome"></i></div>
         <p>Castles</p>
+        </a>
       </div>
-      </a>
-      <a href="/listings/beaches" class="nav-link">
-      <div class="filter">
+      
+      <div class="filter navbar-nav">
+        <a href="/listings/beaches" class="nav-link">
         <div><i class="fa-solid fa-umbrella-beach"></i></div>
         <p>Beaches</p>
+        </a>
       </div>
-      </a>
-      <a href="/listings/camping" class="nav-link">
-      <div class="filter">
+      
+      <div class="filter navbar-nav">
+        <a href="/listings/camping" class="nav-link">
         <div><i class="fa-solid fa-campground"></i></div>
         <p>Camping</p>
+        </a>
       </div>
-      </a>
-      <a href="/listings/farms" class="nav-link">
-      <div class="filter">
+      
+      <div class="filter navbar-nav">
+        <a href="/listings/farms" class="nav-link">
         <div><i class="fa-solid fa-cow"></i></div>
         <p>Farms</p>
+        </a>
       </div>
-      </a>
-      <a href="/listings/arctic" class="nav-link">
-      <div class="filter">
+      
+      <div class="filter navbar-nav">
+        <a href="/listings/arctic" class="nav-link">
         <div><i class="fa-regular fa-snowflake"></i></div>
         <p>Arctic</p>
+        </a>
       </div>
-      </a>
-      <a href="/listings/domes" class="nav-link">
-      <div class="filter">
-        <div><i class="fa-solid fa-igloo"></i></div>
-        <p>Domes</p>
-      </div>
-      </a>
+      
 
       <div class="tax-toggle">
         <div class="form-check-reverse form-switch">
@@ -108,6 +122,8 @@
       </div>
 
     </div>
+   </div>
+  </nav>
 
 
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3">

@@ -60,10 +60,6 @@ module.exports.renderArctic = async(req , res) => {
   res.render("listings/showfilters.ejs" , {lists});
 }
 
-module.exports.renderDomes = async(req , res) => {
-  const lists= await Listing.find({category:"domes"});
-  res.render("listings/showfilters.ejs" , {lists});
-}
 
 module.exports.renderNewForm = (req, res) => {
     res.render("listings/new.ejs");

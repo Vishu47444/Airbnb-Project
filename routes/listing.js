@@ -3,7 +3,7 @@ const router = express.Router();
 const wrapAsync= require("../utils/wrapAsync.js");
 const Listing= require("../models/listing.js");
 const {isLoggedIn , isOwner , validateListing} = require("../middleware.js");
-const {index, renderNewForm, showListing, createListing, renderEditForm, updateListing, deleteListing , renderTrending, renderRooms, renderIconicCities, renderMountains, renderCastles, renderCamping, renderBeaches, renderFarms, renderArctic, renderDomes, renderSearch} = require("../controllers/listings.js");
+const {index, renderNewForm, showListing, createListing, renderEditForm, updateListing, deleteListing , renderTrending, renderRooms, renderIconicCities, renderMountains, renderCastles, renderCamping, renderBeaches, renderFarms, renderArctic, renderSearch} = require("../controllers/listings.js");
 const multer  = require('multer');
 const {storage} = require("../CloudConfig.js");
 const upload = multer({ storage });
@@ -27,7 +27,6 @@ router.get("/beaches", renderBeaches);
 router.get("/camping", renderCamping);
 router.get("/farms", renderFarms);
 router.get("/arctic", renderArctic);
-router.get("/domes", renderDomes);
 
 router
    .route("/:id")
