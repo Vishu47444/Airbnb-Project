@@ -36,77 +36,80 @@
         align-items: center;
         justify-content: center;
         opacity: 0.7;
-        margin-left: 4rem;
+        margin-left: 3.4rem;
       }
 
       .tax-toggle:hover {
         opacity:1
       }
+
+      .filter {
+        padding-left: 0.6rem;
+      }
+
+
     </style>
 
-  <nav class="navbar navbar-expand-md bg-body-light"> 
 
-   <div id="filters" class="container fluid">
-
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div id="filters">
       
-      <div class="filter navbar-nav">
+      <div class="filter">
         <a href="/listings/trending" class="nav-link">
         <div><i class="fa-solid fa-fire"></i></div>
         <p>Trending</p>
         </a>
       </div>
       
-      <div class="filter navbar-nav">
+      <div class="filter">
         <a href="/listings/rooms" class="nav-link">
         <div><i class="fa-solid fa-bed"></i></div>
         <p>Rooms</p>
         </a>
       </div>
       
-      <div class="filter navbar-nav">
+      <div class="filter ">
         <a href="/listings/iconic_cities" class="nav-link">
         <div><i class="fa-solid fa-mountain-city"></i></div>
         <p>Iconic Cities</p>
         </a>
       </div>
       
-      <div class="filter navbar-nav">
+      <div class="filter">
         <a href="/listings/mountains" class="nav-link">
         <div><i class="fa-solid fa-mountain"></i></div>
         <p>Mountains</p>
         </a>
       </div>
     
-      <div class="filter navbar-nav">
+      <div class="filter">
         <a href="/listings/castles" class="nav-link">
         <div><i class="fa-brands fa-fort-awesome"></i></div>
         <p>Castles</p>
         </a>
       </div>
       
-      <div class="filter navbar-nav">
+      <div class="filter">
         <a href="/listings/beaches" class="nav-link">
         <div><i class="fa-solid fa-umbrella-beach"></i></div>
         <p>Beaches</p>
         </a>
       </div>
       
-      <div class="filter navbar-nav">
+      <div class="filter">
         <a href="/listings/camping" class="nav-link">
         <div><i class="fa-solid fa-campground"></i></div>
         <p>Camping</p>
         </a>
       </div>
       
-      <div class="filter navbar-nav">
+      <div class="filter ">
         <a href="/listings/farms" class="nav-link">
         <div><i class="fa-solid fa-cow"></i></div>
         <p>Farms</p>
         </a>
       </div>
       
-      <div class="filter navbar-nav">
+      <div class="filter">
         <a href="/listings/arctic" class="nav-link">
         <div><i class="fa-regular fa-snowflake"></i></div>
         <p>Arctic</p>
@@ -122,8 +125,6 @@
       </div>
 
     </div>
-   </div>
-  </nav>
 
 
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3">
@@ -143,6 +144,7 @@
       </a>
     <% } %>
   </div>
+
 
   <script>
     let taxSwitch = document.getElementById("switchCheckDefault");
