@@ -89,8 +89,8 @@ body {
 }
 
 .show-img{
-   height:14rem;
-   width:28rem;
+   height:12rem;
+   width:20rem;
    border-radius: 1rem;
    object-fit: cover;
 }
@@ -105,6 +105,6 @@ body {
 }
 
 #map {
-    height: 18rem;
-    width: 32rem;
+    height: 16rem;
+    width: 24rem;
 }
