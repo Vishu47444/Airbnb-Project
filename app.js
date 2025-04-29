@@ -68,7 +68,7 @@ const sessionOptions = {
 };
 
 
-app.use(session(sessionOptions));
+app.use(session(sessionOptions)); 
 app.use(flash());
 
 app.use(passport.initialize());
